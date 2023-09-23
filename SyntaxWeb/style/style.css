@@ -110,6 +110,67 @@ h2 {
     animation: carousel-animation 15s linear infinite ;
 }
 
+/* Images - CAMPUS DRIVE */
+div.image-slu img {
+    width: 100%;
+    padding-bottom: 1%;
+}
+div.images-portrait, div.images-landscape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.images-portrait img {
+    width: 400px;
+    height: 600px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000000;
+    cursor: pointer;
+    transition: 400ms;
+}
+div.images-landscape img {
+    width: 800px;
+    height: 450px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000000;
+    cursor: pointer;
+    transition: 400ms;
+}
+div.images-portrait img:hover, div.images-landscape img:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+#drive {
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(90deg, rgba(165,189,215,100) 0%, rgba(255,255,255,100) 43%, rgba(206,217,143,100) 100%); */
+    color:black;
+    padding-top: 5%;
+    padding-bottom: 5%;    
+}   
+#drive > h3 {
+    font-family: Georgia ,sans-serif;
+    font-size: 36pt;
+    text-align: center;
+    color: black;
+}
+.arrow-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 2%;
+}
+.arrow-down {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 25px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
 @keyframes carousel-animation {
     0% {
         left: 0;
